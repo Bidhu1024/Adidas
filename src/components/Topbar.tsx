@@ -25,7 +25,11 @@ const Topbar = () => {
     <>
       <Box
         sx={{
+          zIndex:1000,
+          position:"fixed",
           width: "100%",
+          top:0,
+          left:0,
           minHeight: clicked ? "20rem" : "4rem",
           p: 2,
           bgcolor: clicked ? "white" : "black",

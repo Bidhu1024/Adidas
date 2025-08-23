@@ -9,7 +9,8 @@ const Navbar = () => {
       width={"100%"}
       bgcolor={"white"}
       position={"relative"}
-      sx={{ p: 3 }}
+      sx={{ p: 3,mt:"4.1rem" }}
+      
     >
       <UpperBox />
       <Box>
