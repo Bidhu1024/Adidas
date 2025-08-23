@@ -1,11 +1,7 @@
-
-import Dashboard from './screens/Dashboard/Dashboard'
+import Dashboard from "./screens/Dashboard/Dashboard";
 
 function App() {
-
-  return (
-   <Dashboard />
-  )
+  return <Dashboard />;
 }
 
-export default App
+export default App;
