@@ -1,28 +1,46 @@
 import { Box, Typography } from "@mui/material";
-import  KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useState } from "react";
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Streched from "./Streched";
+
 const Topbar = () => {
-    const [clicked,setClicked] = useState(false)
+  const [clicked, setClicked] = useState(false);
+const handleClose = ()=>{
+    setClicked(false)
+}
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "4rem",
-        p: 2,
-        bgcolor: "black",
-        cursor: "pointer",
-      }}
-    >
-      <Typography
-        sx={{ color: "white", fontWeight: "600", textAlign: "center" }}
+    <>
+      <Box
+        sx={{
+          width: "100%",
+          height: clicked ? "10rem" : "4rem",
+          p: 2,
+          bgcolor: clicked ? "red" : "black",
+          cursor: "pointer",
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
       >
-        FREE DELIVERY, RETURN & EXCHANGE
-      </Typography>
-<Box>
- <KeyboardArrowUpIcon onClick={()=>setClicked(false)}/>  <KeyboardArrowDownIcon onClick={()=>setClicked(true)}/>
-</Box>
-    </Box>
+        {clicked ? (
+          <Streched handleClick = {handleClose}/>
+        ) : (
+          <>
+            <Typography
+              sx={{ color: "white", fontWeight: "600", textAlign: "center" }}
+            >
+              FREE DELIVERY, RETURN & EXCHANGE
+            </Typography>
+            <Box>
+              <KeyboardArrowDownIcon
+                onClick={() => setClicked(true)}
+                sx={{ color: "white" }}
+              />
+            </Box>
+          </>
+        )}
+      </Box>
+    </>
   );
 };
 
