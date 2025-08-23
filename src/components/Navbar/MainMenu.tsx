@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import logo from "../../assets/logo.jpg";
 import MenuList from "./MenuList";
+import Options from "./Options";
 const MainMenu = () => {
   return (
     <Box
@@ -16,7 +17,9 @@ const MainMenu = () => {
       <Box>
         <MenuList />
       </Box>
-      <Box></Box>
+      <Box>
+        <Options />
+      </Box>
     </Box>
   );
 };
