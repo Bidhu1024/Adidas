@@ -1,3 +1,4 @@
+import ImageBox from '../../components/Image/ImageBox';
 import Navbar from '../../components/Navbar/Navbar';
 import Topbar from '../../components/Topbar';
 import VictoryBar from '../../components/Victory/VictoryBar';
@@ -9,6 +10,8 @@ const Dashboard = () => {
       <Topbar />
       <Navbar />
       <VictoryBar />
+      <ImageBox/>
+
     </div>
   )
 }

@@ -5,7 +5,7 @@ const VictoryBar = () => {
     <Box
       width={"100%"}
       sx={{
-        bgcolor: "gray",
+        bgcolor: "#d3d3d3",
         height: "3rem",
         p: 2,
         display: "flex",
@@ -15,10 +15,10 @@ const VictoryBar = () => {
     >
       <Box></Box>
       <Box>
-        <Typography>Celebrate India's victory. Wear the Win!</Typography>
+        <Typography fontWeight={'400'} fontSize={".9rem"}>Celebrate India's victory. Wear the Win!</Typography>
       </Box>
       <Box>
-        <ArrowRightAltIcon sx={{ fontSize: "2rem" }} />
+        <ArrowRightAltIcon sx={{ fontSize: "2rem",cursor:"pointer" }} />
       </Box>
     </Box>
   );
