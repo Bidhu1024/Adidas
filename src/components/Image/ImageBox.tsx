@@ -42,10 +42,12 @@ const ImageBox = () => {
               alignItems: "center",
               bgcolor: "black",
               p: 1,
-              border:"1px solid white"
+              border: "1px solid white",
             }}
           >
-            <Link sx={{ color: "white", cursor: "pointer", fontWeight:"600" }}>Shop Women</Link>
+            <Link sx={{ color: "white", cursor: "pointer", fontWeight: "600" }}>
+              Shop Women
+            </Link>
             <ArrowRightAltIcon sx={{ color: "white", width: "2rem" }} />
           </Box>
           <Box
@@ -54,10 +56,12 @@ const ImageBox = () => {
               alignItems: "center",
               bgcolor: "black",
               p: 1,
-                border:"1px solid white"
+              border: "1px solid white",
             }}
           >
-            <Link sx={{ color: "white", cursor: "pointer", fontWeight:"600"  }}>Shop Men</Link>
+            <Link sx={{ color: "white", cursor: "pointer", fontWeight: "600" }}>
+              Shop Men
+            </Link>
             <ArrowRightAltIcon sx={{ color: "white", width: "2rem" }} />
           </Box>
           <Box
@@ -66,10 +70,10 @@ const ImageBox = () => {
               alignItems: "center",
               bgcolor: "black",
               p: 1,
-                border:"1px solid white"
+              border: "1px solid white",
             }}
           >
-            <Link sx={{ color: "white", cursor: "pointer", fontWeight:"600"  }}>
+            <Link sx={{ color: "white", cursor: "pointer", fontWeight: "600" }}>
               Explore Superstar
             </Link>
             <ArrowRightAltIcon sx={{ color: "white", width: "2rem" }} />
