@@ -46,7 +46,7 @@ const HotSection = () => {
         </Box>
         <Box
           width={"50%"}
-           sx={{
+          sx={{
             display: "flex",
             flexDirection: "column",
             gap: "10px",
@@ -64,7 +64,8 @@ const HotSection = () => {
             form. function. set.
           </Typography>
           <Typography fontSize={"1rem"} fontWeight={"400"}>
-           A collection of curated sets designed for seamless style and movement.
+            A collection of curated sets designed for seamless style and
+            movement.
           </Typography>
           <Link
             sx={{
