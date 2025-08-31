@@ -61,10 +61,10 @@ const HotSection = () => {
             fontSize={"1.2rem"}
             fontWeight={"600"}
           >
-            Graphic tees for for a creative life.
+            form. function. set.
           </Typography>
           <Typography fontSize={"1rem"} fontWeight={"400"}>
-            Graffiti-inspired apparel for your street-style moments.
+           A collection of curated sets designed for seamless style and movement.
           </Typography>
           <Link
             sx={{
