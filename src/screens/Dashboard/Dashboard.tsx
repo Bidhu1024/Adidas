@@ -1,6 +1,8 @@
+import { Box } from "@mui/material";
+import HotSection from "../../components/Hot/HotSection";
 import ImageBox from "../../components/Image/ImageBox";
 import Navbar from "../../components/Navbar/Navbar";
-import ShopingSection from "../../components/Shopping/ShopingSection";
+//import ShopingSection from "../../components/Shopping/ShopingSection";
 import Topbar from "../../components/Topbar";
 import VictoryBar from "../../components/Victory/VictoryBar";
 
@@ -11,7 +13,10 @@ const Dashboard = () => {
       <Navbar />
       <VictoryBar />
       <ImageBox />
-      <ShopingSection />
+      <Box sx={{width:"100%",padding:"10px 4rem"}}>
+        {/* <ShopingSection /> */}
+        <HotSection />
+      </Box>
     </div>
   );
 };
