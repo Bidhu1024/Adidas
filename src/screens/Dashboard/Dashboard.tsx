@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 //import ShopingSection from "../../components/Shopping/ShopingSection";
 import Topbar from "../../components/Topbar";
 import VictoryBar from "../../components/Victory/VictoryBar";
+import Overflow from '../../components/OverflowShopping/Overflow';
 
 const Dashboard = () => {
   return (
@@ -16,6 +17,7 @@ const Dashboard = () => {
       <Box sx={{width:"100%",padding:"10px 4rem"}}>
         {/* <ShopingSection /> */}
         <HotSection />
+        <Overflow />
       </Box>
     </div>
   );
