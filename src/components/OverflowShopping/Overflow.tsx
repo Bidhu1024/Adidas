@@ -9,13 +9,13 @@ const Overflow = () => {
       justifyContent="space-between"
       alignItems="center"
       gap="1rem"
-      sx={{mt:4}}
+      sx={{ mt: 4 }}
     >
       {overflowDatas?.map((data) => (
         <Box
           key={data.id}
           sx={{
-            height: "30rem", // same height for all cards
+            height: "30rem",
             minWidth: "14rem",
             display: "flex",
             flexDirection: "column",
@@ -24,10 +24,10 @@ const Overflow = () => {
             p: 0.4,
             ":hover": {
               border: "1px solid black",
+              cursor:"pointer"
             },
           }}
         >
-          {/* Image section */}
           <Box sx={{ flex: 1, overflow: "hidden" }}>
             <img
               src={data.image}
@@ -35,12 +35,10 @@ const Overflow = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // keeps proportion but fills container
+                objectFit: "cover",
               }}
             />
           </Box>
-
-          {/* Text + Link section */}
           <Box>
             <Typography fontSize="1rem" fontWeight="600">
               {data.name.length > 20
@@ -50,7 +48,7 @@ const Overflow = () => {
             <Typography fontSize="0.8rem" fontWeight="400">
               {data?.description}
             </Typography>
-            <Link sx={{ color: "black" }}>Shop Now</Link>
+            <Link sx={{ color: "black",mt:4 }}>Shop Now</Link>
           </Box>
         </Box>
       ))}
